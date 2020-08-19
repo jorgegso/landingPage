@@ -24,9 +24,27 @@ a {
 	text-decoration: none;
 	list-style: none;
 }
+.section_nav {
+	height: 100vh;
+}
+.background {
+	color: white;
+	background-image: url('background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #cccccc;
+}
 
+.background a {
+	font-size: var(--font-size-a);
+	color: white;
+}
 .nav_btn_ham {
 	border: none;
+}
+.nav_menu_hamburguer {
+	width: 100px;
+	height: 100%;
 }
 
 .nav__list i {
@@ -46,7 +64,7 @@ a {
 }
 
 .nav__section_title {
-	margin-top: var(--margin--title);
+	margin-top: 9%;
 }
 
 .title__insta {
@@ -62,13 +80,14 @@ a {
 	width: 10em;
 }
 
-.section__main {
+.section__main a{
 	background-color: white;
 	height: auto;
+  color: black;
 }
-.section__main a {
-	font-size: var(--font-size-a);
-	color: black;
+
+.section_center_contact{
+  font-size: 15px;
 }
 
 .main__title_box a {
@@ -79,6 +98,9 @@ a {
 }
 .main__title_box {
 	margin-left: 170px;
+}
+#section_center_contact{
+  font-size: 26px;
 }
 .left a {
 	display: flex;
@@ -94,18 +116,9 @@ a {
 .my__work {
 	margin: 2em;
 }
-
-.background {
-	color: white;
-	background-image: url('background.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: #cccccc;
-}
-
-.background a {
-	font-size: var(--font-size-a);
-	color: white;
+.title__insta,
+.my__work a {
+	font-size: 17px;
 }
 
 footer {
@@ -181,9 +194,9 @@ footer {
 	border-radius: 14%;
 }
 
-.footer_center_box a{
-  font-size: 18px;
-  margin-top: 10px;
+.footer_center_box a {
+	font-size: 18px;
+	margin-top: 10px;
 }
 /* Style inputs with type="text", select elements and textareas */
 input[type='text'],
@@ -196,8 +209,8 @@ textarea {
 	box-sizing: border-box; /* Make sure that padding and width stays in place */
 	margin-top: 6px; /* Add a top margin */
 	margin-bottom: 16px; /* Bottom margin */
-  resize: vertical;
-  background-color: #c4c2c2;
+	resize: vertical;
+	background-color: #c4c2c2;
 }
 
 /* Style the submit button with a specific background color etc */
@@ -210,10 +223,9 @@ input[type='submit'] {
 	cursor: pointer;
 }
 
-
 /* When moving the mouse over the submit button, add a darker green color */
 input[type='submit']:hover {
-  background-color: #7a7a7a;
+	background-color: #7a7a7a;
 }
 
 /* Add a background color and some padding around the form */
@@ -225,20 +237,6 @@ input[type='submit']:hover {
 
 /* Media queries */
 @media screen and (max-width: 600px) {
-	.footer_content {
-		display: flex;
-		flex-direction: column;
-	}
-	.footer_item {
-		align-items: center;
-		margin-top: 5em;
-	}
-	.footer_title_right,
-	.footer_item p {
-		margin-right: 0;
-	}
-}
-@media screen and (max-width: 300px) {
 	.footer_content {
 		display: flex;
 		flex-direction: column;
