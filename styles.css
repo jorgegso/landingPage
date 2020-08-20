@@ -17,8 +17,8 @@ body {
 	/* font-family: 'Times New Roman', Times, serif; */
 	font-family: 'Avenir Next', 'Avenir', sans-serif;
 }
-
-ul,
+ 
+ul, 
 li,
 a {
 	text-decoration: none;
@@ -39,13 +39,47 @@ a {
 	font-size: var(--font-size-a);
 	color: white;
 }
-.nav_btn_ham {
-	border: none;
-}
+
 .nav_menu_hamburguer {
-	width: 100px;
-	height: 100%;
+	position: fixed;
+	right: -84.5%;
+	width: 300px;
+	height: 91.5vh;
+  background-color: #5d5d5d;
+	transition: all 0.4s ease-in-out;
 }
+.change {
+	right: 0;
+	transition: all 0.4s ease-in-out;
+}
+
+.nav_ham_list{
+  display: flex;
+  flex-direction: column;
+	justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.nav_menu_hamburguer_item a{
+  font-size:30px;
+  color:#ffffff;
+  text-shadow: 1px 4px #686767;
+  transition: all 2s ease-in-out;
+} 
+.nav_menu_hamburguer_item {
+  margin-top: 20px;
+} 
+
+.nav_btn_ham {
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	height: 50px;
+	width: 50px;
+	color: white;
+}
+
 
 .nav__list i {
 	margin-right: 15px;
@@ -63,56 +97,64 @@ a {
 	margin-right: 15px;
 }
 
-.nav__section_title {
-	margin-top: 9%;
-}
-
 .title__insta {
 	font-size: 14px;
 }
 
 .main__title {
 	font-size: var(--size-font-title);
-	width: 1em;
+  width: 1em;
 }
 .main__title2 {
 	font-size: var(--size-font-title);
-	width: 10em;
+  width: 10em; 
+  transition: all 5s ease-in-out;
 }
-
-.section__main a{
+ 
+.section__main a {
 	background-color: white;
-	height: auto;
-  color: black;
+	height: 100vh;
+	color: black; 
 }
 
-.section_center_contact{
-  font-size: 15px;
+.section_center_contact {
+	font-size: 18px;
+} 
+
+.main__title_box {
+  margin-left: 170px;
+  padding-top: 15%;
 }
 
 .main__title_box a {
 	font-size: 5em;
 }
+ 
 .main__title_box p {
 	font-size: 19px;
 }
-.main__title_box {
-	margin-left: 170px;
-}
-#section_center_contact{
-  font-size: 26px;
+
+#section_center_contact {
+	font-size: 26px;
 }
 .left a {
 	display: flex;
-	justify-content: flex-end;
+ 	justify-content: flex-end;
 }
-
-.scroll__down {
-	margin-top: 20em;
+ 
+.scroll__down {  
+  display: flex;
+  flex-direction: column;
+	margin-top: 7em;
 	padding: 1em;
-	text-align: center;
+  text-align: center;
+  transition: all 0.9s ease-in-out;
 }
 
+.scroll__down i{
+  margin-top: 12px;
+  text-shadow: 3px 2px rgb(66, 194, 77);
+}
 .my__work {
 	margin: 2em;
 }
