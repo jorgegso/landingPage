@@ -111,10 +111,15 @@ a {
   transition: all 5s ease-in-out;
 }
  
-.section__main a {
+.section__main {
 	background-color: white;
 	height: 100vh;
-	color: black; 
+	
+} 
+.section__main a{
+  color: black; 
+  text-decoration: none;
+  list-style: none;
 }
 
 .section_center_contact {
@@ -137,11 +142,7 @@ a {
 #section_center_contact {
 	font-size: 26px;
 }
-.left a {
-	display: flex;
- 	justify-content: flex-end;
-}
- 
+
 .scroll__down {  
   display: flex;
   flex-direction: column;
@@ -149,6 +150,7 @@ a {
 	padding: 1em;
   text-align: center;
   transition: all 0.9s ease-in-out;
+  font-size: 16px;
 }
 
 .scroll__down i{
@@ -156,8 +158,17 @@ a {
   text-shadow: 3px 2px rgb(66, 194, 77);
 }
 .my__work {
-	margin: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 30px;
+  margin-top: 30px;
 }
+/* .left a {
+	display: flex;
+}
+  */
 .title__insta,
 .my__work a {
 	font-size: 17px;
