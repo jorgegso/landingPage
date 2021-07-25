@@ -16,13 +16,14 @@ body {
 	margin: auto;
 	font-family: 'Avenir Next', 'Avenir', sans-serif;
 }
- 
+
 ul, 
 li,
 a {
 	text-decoration: none;
 	list-style: none;
 }
+
 .section_nav {
 	height: 100vh;
 }
@@ -354,5 +355,4 @@ input[type='submit']:hover {
   .footer_contact_container {
     padding-top: 2rem;
   }
-  
 }
